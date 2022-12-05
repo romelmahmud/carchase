@@ -92,14 +92,215 @@ body{
   transition: all 350ms ease-in-out;
 }
 .nav-container button:hover {
-  background-color: #d8c09c;
+  background-color: #e1cfb5;
 }
 
 .banner {
 width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background-image: url(./assets/background_car.png);
   background-repeat: no-repeat;
   background-size: cover;
+  /* padding-bottom: 100px; */
 
 }
+
+.banner_container{
+  max-width: 100rem;
+  padding: 0 4rem;
+   height: 100%;
+ 
+}
+.banner_columns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.banner_container .logo {
+  padding: 6.25rem 0 3.75rem;
+  font-size: 2rem;
+  letter-spacing: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.banner_title{
+  
+  font-size: 4.375rem;
+  font-weight: 800;
+  line-height: 1.1;
+  
+  margin-bottom: 2.5rem;
+
+}
+.banner_info{
+  display: flex;
+  margin-bottom: 2.1875rem;
+}
+
+.car_image_container{
+  display: flex;
+  margin-right: 1.25rem;
+}
+
+
+.car_image_container .car_image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+.car_image_container .car_image:not(:first-child){
+  margin-left: -1.25rem;
+}
+
+.banner_info_body {
+  max-width: 50%;
+}
+.banner_info_body p {
+  font-size: 1.25rem;
+}
+.banner_button_container{
+  margin-bottom: 10rem;
+}
+.banner_button_container button{
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+}
+.btn_join{
+  background: var(--dark);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 1.125rem 3.75rem;
+  transition: all 350ms ease-in-out;
+  margin-right: 1.25rem;
+  
+}
+.btn_join:hover, .sign_up:hover, .google_sign_up:hover{
+  background-color: #26262d;
+}
+.btn_download {
+  padding: 1.125rem 2.25rem;
+  transition: all 350ms ease-in-out;
+  background: transparent;
+  border: none;
+}
+.btn_download:hover{
+  background:#EEE2D1 ;
+ 
+  border-radius: 5px;
+
+}
+
+.btn_download img, .google_sign_up img {
+  display: inline-block;
+  margin-right: .5rem;
+  margin-bottom: -.25rem;
+}
+
+.banner_create_account{
+  max-width: 360px;
+  font-family: 'Poppins', sans-serif;
+
+}
+.create_account_title{
+  font-size: 2.125rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  letter-spacing: -1.34px;
+ filter: drop-shadow(2px 2px 10px rgba(0,0,0, .25));
+}
+
+
+.create_account{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8rem;
+
+  background-color: var(--gray-dark);
+  border-radius: 14px;
+  padding: 1.25rem;
+  -webkit-box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.1), 10px 6px 10px 0px rgba(0,0,0,0.3); 
+box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.1), 10px 6px 10px 0px rgba(0,0,0,0.3)
+}
+
+.create_account input{
+  padding: .875rem;
+  background-color: white;
+  border-radius: .4063rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1.125rem;
+}
+.create_account input::placeholder{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+
+}
+
+
+.terms_conditions{
+  display: flex;
+  padding:0 1.25rem 1rem
+}
+.terms_conditions label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #090914;
+  width: 85%;
+}
+.terms_conditions input {
+  margin-left: 2rem;
+}
+.terms_conditions a {
+  text-decoration: none;
+  color: #2563EB;
+}
+.terms_conditions a:visited{
+  color: #2563EB;
+}
+
+
+.sign_up, .google_sign_up{
+  background-color: var(--dark);
+  padding: .825rem 0;
+  border-radius: .4063rem;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+
+}
+
+
+.sign_up {
+  margin-bottom: .75rem;
+}
+ .sign_up_text{
+  text-align: center;
+  color: white;
+  font-size: .6875rem;
+  font-weight: 600;
+  margin-top: .9375rem;
+ }
+ .sign_up_text a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 700;
+ }
+ .sign_up_text a:visited {
+  color: var(--dark);
+ }
+ .sign_up_text a:hover, .terms_conditions a:hover{
+  text-decoration: underline;
+ }
