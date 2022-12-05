@@ -1,0 +1,53 @@
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p
+ {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+img
+ {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --dark:#18181B;
+  --brown-light: #e9d2af;
+  --gray-light:#9e9281;
+  --gray-dark: #5F5851
+
+}
+
+body{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--dark);
+}
