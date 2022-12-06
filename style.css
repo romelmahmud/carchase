@@ -373,7 +373,7 @@ box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.1), 10px 6px 10px 0px rgba(0,0,0,0.3)
  padding: .525rem 1.15rem;
  text-transform: capitalize;
  font-weight: 700;
- border: 2px solid var(--dark);
+ border: 1px solid var(--dark);
  border-radius: 5px;
  background-color: var(--dark);
  color:white;
@@ -404,6 +404,117 @@ box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.1), 10px 6px 10px 0px rgba(0,0,0,0.3)
 .btn_view_more:hover{
   background-color: var(--brown-light);
   color: var(--dark)
+}
+
+/* Footer */
+.footer {
+  padding: 5rem 0 0;
+  background-color: var(--dark);
+  color: white;
+  border-bottom: 1px solid white;
+
+
+}
+.footer_container{
+   max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.footer_content{
+  font-weight: 500;
+}
+.footer_content img {
+  width: 80%;
+  margin-bottom: 1.25rem;
+}
+.footer_content a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+.footer_content a:active {
+  color: white;
+}
+
+.footer_contact_section{
+  font-size: 1.15rem;
+
+}
+.footer_contact_title, .newsletter_title{
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.footer_contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.15rem;
+}
+
+
+.footer_contact  div i{
+  border: 1px solid white;
+   width: 2.5rem;
+   height: 2.5rem;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: .85rem;
+}
+.footer_newsletter input {
+  width: 95%;
+  padding: .875rem;
+  background-color: var(--dark);
+  border: 1px solid white;
+  border-radius: 100vw;
+  color: white;
+  outline: none;
+}
+.newsletter_form button {
+  padding: .87rem;
+  border-radius: 100%;
+  border: none;
+  margin-left: -2.75rem;
+  cursor: pointer;
+  background: var(--brown-light);
+  transition: all 300ms ease-in-out;
+}
+.newsletter_form button:hover {
+
+  background: var(--gray-light);
+}
+.newsletter_form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.65rem;
+}
+
+.follow {
+  font-size: 1.25rem;
+  margin-bottom: .75rem;
+}
+.social_icons i {
+  font-size: 1.25rem;
+  margin-right: .75rem;
+  cursor: pointer;
+}
+
+.copyright {
+  padding: 2rem;
+ text-align: center;
+ color: white;
+ background-color: var(--dark);
+}
+.copyright a {
+  font-weight: 700;
+  color: var(--brown-light);
+}
+.copyright a:visited{
+  color: var(--brown-light);
 }
 
 
@@ -470,7 +581,7 @@ box-shadow: 3px 5px 10px 0px rgba(0,0,0,0.1), 10px 6px 10px 0px rgba(0,0,0,0.3)
     }
     
     .banner_title{
-display: none;     
+     display: none;     
     }
 
     .banner_info{
@@ -516,6 +627,15 @@ display: none;
       grid-template-columns: repeat(2, 1fr);
       
     }
+    .footer_container{
+      
+     grid-template-columns:1fr
+   
+   }
+   .footer_newsletter input {
+    width: 65%;
+    
+  }
     
   }
 
@@ -535,6 +655,12 @@ display: none;
        
      }
 
+     .footer_newsletter input {
+      width: 85%;
+      
+    }
+      
+
 
 
   @media only screen and (max-width: 500px) 
@@ -551,6 +677,16 @@ display: none;
       display: flex;
       flex-direction: column;
      
+    }
+
+    .footer_contact_section{
+      font-size: 1rem;
+    
+    }
+    .footer_contact_title, .newsletter_title{
+      
+      font-size: 1.25rem;
+      
     }
   
  
@@ -577,6 +713,12 @@ display: none;
    }
    .car_price {
     margin-bottom: 1rem;
+   }
+   .footer_contact{
+    flex-direction: column;
+   }
+   .footer_contact div {
+    margin-bottom: .75rem;
    }
    
   }
